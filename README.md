@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Sistema de Gerenciamento de Alunos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é uma aplicação web para gerenciar alunos, fornecendo funcionalidades para adicionar, atualizar, visualizar detalhes e remover alunos. A aplicação foi construída utilizando React e se conecta a uma API para realizar as operações CRUD.
 
-## Available Scripts
+## Requisitos
+Node.js 14.x ou superior
+Yarn ou npm (Gerenciador de pacotes)
+API que suporte as rotas e endpoints utilizados pelo projeto
+Instalação
+Clone o repositório para a sua máquina local:
+git clone https://github.com/seu_usuario/seu_repositorio.git
+cd seu_repositorio
 
-In the project directory, you can run:
+### Instale as dependências do projeto:
 
-### `npm start`
+Se você estiver usando Yarn:
+yarn install
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Se você estiver usando npm:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+npm install
 
-### `npm test`
+### Configure as variáveis de ambiente:
+Crie um arquivo .env na raiz do projeto e configure as variáveis de ambiente necessárias, como o URL da API:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+REACT_APP_API_URL=http://127.0.0.1:8000/api
 
-### `npm run build`
+### Inicie o servidor de desenvolvimento:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+yarn start   ou npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+O servidor de desenvolvimento será iniciado e a aplicação estará disponível em http://localhost:3000.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Uso
 
-### `npm run eject`
+#### A aplicação possui uma interface simples para gerenciar alunos:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Para adicionar um novo aluno, clique no botão "Adicionar Aluno" e preencha o formulário com as informações do aluno. Clique em "Salvar" para adicionar o aluno ou em "Cancelar" para fechar o formulário.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para editar as informações de um aluno, clique no ícone de lápis na tabela de alunos. O formulário será preenchido com os dados do aluno. Faça as alterações necessárias e clique em "Salvar" para atualizar as informações ou em "Cancelar" para fechar o formulário.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Para visualizar os detalhes de um aluno, clique no ícone de olho na tabela de alunos. Uma janela com os detalhes do aluno será exibida. Clique no botão "X" no canto superior direito para fechar a janela.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Para remover um aluno, clique no ícone de lixeira na tabela de alunos. Uma confirmação será solicitada antes de prosseguir com a exclusão.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
