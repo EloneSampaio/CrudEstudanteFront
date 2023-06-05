@@ -1,3 +1,4 @@
+# Essa aplicação tem como objeto demonstrar o uso do docker e docker-composer.
 # Sistema de Gerenciamento de Alunos
 
 Este projeto é uma aplicação web para gerenciar alunos, fornecendo funcionalidades para adicionar, atualizar, visualizar detalhes e remover alunos. A aplicação foi construída utilizando React e se conecta a uma API para realizar as operações CRUD.
